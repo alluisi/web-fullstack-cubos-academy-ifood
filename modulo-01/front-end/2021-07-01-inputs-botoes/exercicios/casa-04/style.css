@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F1C44;
+}
+
+.container {
+    font-family: 'Neuton', serif;
+    width: 517px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 218px auto;
+    padding: 60px 90px 50px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 54px;
+}
+
+.google {
+    width: 337px;
+    height: 69px;
+    background: #5B86E6;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.google:hover {
+    box-shadow: 0px 4px 13px rgba(19, 69, 178, 0.3);
+}
+
+.google img {
+    width: 55px;
+    height: 55px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 11px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #949495;
+    margin-bottom: 39px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 337px;
+    height: 69px;
+    background: #FFFFFF;
+    border: 1px solid #D9DCED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #949495;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border: 1px solid #000000;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.start {
+    width: 337px;
+    height: 69px;
+    background: #E65B7C;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 55px;
+}
+
+.start:hover {
+    box-shadow: 0px 4px 15px rgba(204, 28, 69, 0.3);
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #5B86E6;
+}

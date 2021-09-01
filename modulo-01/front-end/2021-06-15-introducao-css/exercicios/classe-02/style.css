@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+header {
+    padding: 15px;
+    background-color: lightgray;
+}
+
+section {
+    color: white;
+    padding: 30px;
+}
+
+p {
+    margin-bottom: 150px;
+}

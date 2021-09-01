@@ -1,0 +1,12 @@
+h1 {
+    font-size: 54px;
+}
+
+p {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+h1, p {
+    font-family: sans-serif;
+}

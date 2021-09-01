@@ -1,0 +1,24 @@
+body {
+    font-size: 200%;
+}
+
+/*
+p {
+    width: 5%;
+}
+
+a {
+    border: 5px solid tomato;
+    /* margin: 20px; /
+    padding: 20px;
+}
+*/
+
+.btn {
+    text-decoration: none;
+    /* margin-top: 200px; */
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: lightblue;
+    color: black;
+}

@@ -1,0 +1,97 @@
+body {
+    background: #E9EEF6;
+}
+
+.container {
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 1437px;
+    height: 608px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin: auto;
+    margin-top: 245px;
+    margin-bottom: 347px;
+    padding: 90px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #0C1727;
+    margin-bottom: 14px;
+}
+
+.containers {
+    display: flex;
+}
+
+.search {
+    width: 429px;
+    height: 328px;
+    background: #F8F2FA;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 25px;
+}
+
+.browser {
+    width: 429px;
+    height: 328px;
+    background: #FAF2F4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 0px 15px;
+}
+
+.maps {
+    width: 429px;
+    height: 328px;
+    background: #F5F2FA;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.containers h1 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+    width: 244px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0C1727;
+    border-radius: 3px;
+    padding-top: 13px;
+}
+
+img {
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+}

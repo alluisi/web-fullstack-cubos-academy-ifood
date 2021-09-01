@@ -1,0 +1,6 @@
+body {
+    background-color: black;
+    background-image: url('https://unsplash.it/300'), url('https://unsplash.it/301'), url('imagens/padrao.jpg');
+    background-position: 100px 300px, 500px 20px, top left;
+    background-repeat: no-repeat, no-repeat, repeat;
+}

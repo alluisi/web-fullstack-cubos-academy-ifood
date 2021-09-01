@@ -1,0 +1,159 @@
+body {
+    background: #DADDE1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends {
+    width: 666px;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 74px -20px rgba(130, 148, 173, 0.44);
+    border-radius: 10px;
+    padding: 60px 50px 54px;
+    margin: 50px auto 70px;
+}
+
+.friends .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.friends span {
+    width: 146px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+}
+
+.friends a {
+    width: 47px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.friends .friends-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friends .friends-add .photo {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.friends .friends-add h1 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.friends .friends-add .soma {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    padding: 10px;
+}
+
+.friends .friends-add .add {
+    width: 135px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 0px 5px;
+}
+
+.contacts {
+    width: 451px;
+    height: 653px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 74px -20px rgba(130, 148, 173, 0.44);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 50px;
+    margin-bottom: 60px;
+}
+
+.contacts .qtd {
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 62px;
+}
+
+.contacts .qtd .num{
+    border: 1px solid #040405;
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 15px;
+}
+
+.contacts .contacts-container {
+    width: 351px;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.contacts .contacts-container .foto {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contacts .contacts-container .foto img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+
+.contacts .contacts-container .foto .info {
+    width: 100px;
+    height: 42px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contacts .contacts-container h1 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.contacts .contacts-container p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 60px;
+    margin-top: 15px;
+    width: 165px;
+    height: 55px;
+    padding: 18px 30px;
+}

@@ -1,0 +1,28 @@
+.container {
+    background-color: slateblue;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.item {
+    width: 100px;
+    background-color: peachpuff;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.item-1 {
+    min-height: 100px;
+}
+
+.item-2 {
+    min-height: 200px;
+}
+
+.item-3 {
+    min-height: 80px;
+}

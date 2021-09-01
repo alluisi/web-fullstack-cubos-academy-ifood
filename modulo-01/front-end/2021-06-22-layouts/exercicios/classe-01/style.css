@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E6EFF5;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 635px;
+    height: 475px;
+    margin: 160px auto;
+}
+
+.white {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.white h1 {
+    font-size: 24px;
+    color: #2AB3B1;
+    font-weight: 700;
+}
+
+.white span {
+    font-size: 18px;
+    color: #C0DF33;
+    font-weight: 700;
+}
+
+.white p {
+    color: #9AA7BE;
+    font-weight: 400;
+}
+
+.green {
+    background-color: #2AB3B1;
+    color: #FFFFFF;
+    display: flex;
+    align-items: baseline;
+    padding: 40px;
+}
+
+.green h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.preco {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mes {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.compra p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+a {
+    background: #C0DF33;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    padding: 15px 90px;
+    text-decoration: none;
+}
+
+.servicos {
+    padding-left: 80px;
+}
+
+.servicos p {
+    font-weight: 400;
+    font-size: 14px;
+}

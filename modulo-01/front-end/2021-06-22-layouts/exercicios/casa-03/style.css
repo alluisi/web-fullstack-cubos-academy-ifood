@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.hero-section {
+    padding: 40px;
+  
+    background: url('./assets/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 10px 0;
+  
+    margin-bottom: 105px;
+}
+  
+header .logo {
+    width: 170px;
+    height: 100%;
+}
+  
+ul.row {
+    list-style: none;
+}
+  
+header ul.row {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+  
+    color: #FFFFFF;
+}
+  
+header ul.row li {
+    margin-left: 45px;
+}
+  
+.btn {
+    text-decoration: none;
+  
+    background: #FFFFFF;
+    border-radius: 28px;
+  
+    padding: 15px 30px;
+  
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+  
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+  
+    color: #24303E;
+}
+  
+.hero-section h1 {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+  
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+  
+    margin-bottom: 95px;
+}
+  
+.hero-section .arrow {
+    display: block;
+  
+    margin: 0 auto;
+}
+  
+.row {
+    display: flex;
+    align-items: center;
+}
+  
+.row > * {
+    width: 100%;
+}
+  
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.content-container .content {
+    max-width: 445px;
+}
+  
+.content-container .content h2 {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+  
+    color: #24303E;
+  
+    margin-bottom: 32px;
+}
+  
+.content-container .content p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  
+    letter-spacing: -0.128571px;
+  
+    color: #808397;
+  
+    margin-bottom: 40px;
+}
+  
+.content-container .content a {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    text-decoration: none;
+  
+    color: #24303E;
+}
+  
+.background-content {
+    height: 600px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
+}
+  
+.graphic-design {
+    background-image: url('./assets/image-graphic-design.jpg');
+}
+  
+.photography {
+    background-image: url('./assets/image-photography.jpg');
+}
+  
+.graphic-design, .photography {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.background-content .content {
+    max-width: 340px;
+    text-align: center;
+}
+  
+.background-content .content h3 {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+  
+    text-align: center;
+    letter-spacing: -0.2px;
+  
+    color: #24554A;
+  
+    margin-bottom: 25px;
+}
+  
+.background-content .content p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+  
+    text-align: center;
+    letter-spacing: -0.114286px;
+  
+    color: #3E7467;
+}
+  
+.testimonials-section {
+    padding: 160px 165px;
+}
+  
+.testimonials-section h2 {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+  
+    text-align: center;
+    letter-spacing: 5px;
+  
+    color: #A7AAAD;
+  
+    margin-bottom: 80px;
+}
+  
+.testimonial {
+    margin-left: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.testimonial img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  
+    margin-bottom: 58px;
+}
+  
+.testimonial p {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    
+    text-align: center;
+    letter-spacing: -0.128571px;
+    
+    color: #5B636D;
+  
+    margin-bottom: 70px;
+}
+  
+.testimonial .name {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+  
+    color: #24303E;
+}
+  
+.testimonial .role {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.1px;
+  
+    color: #A7AAAD;
+}
+  
+.gallery-section img {
+    max-height: 450px;
+}
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: #90D4C6;
+    padding: 72px 0;
+}
+  
+footer .logo {
+    margin-bottom: 40px;
+}
+  
+footer ul.row {
+    width: 300px;
+  
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  
+    color: #458D7E;
+    justify-content: space-between;
+}
+  
+footer nav {
+    margin-bottom: 88px;
+}
+  
+footer ul.social {
+    width: 164px;
+}

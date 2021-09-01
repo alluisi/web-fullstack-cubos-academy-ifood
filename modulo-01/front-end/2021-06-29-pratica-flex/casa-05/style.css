@@ -1,0 +1,149 @@
+body {
+    background: rgba(255, 106, 149, 0.1);
+}
+
+.seguir {
+    width: 583px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 45px -15px rgba(2, 5, 132, 0.25);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 261px auto 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.info {
+    display: flex;
+}
+
+.img-perfil1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0.5px solid #EFEFFF;
+    box-shadow: 0px 8px 22.5px -7.5px rgba(2, 5, 132, 0.2);
+}
+
+.nome {
+    width: 134px;
+    height: 62px;
+    margin-left: 29px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 22px;
+    color: #202142;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #202142;
+}
+
+.perfil1 button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 146px;
+    height: 54px;
+    background: #202142;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.img-btn1 {
+    width: 24px;
+    height: 24px;
+}
+
+.galeria1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.galeria1 img {
+    width: 180px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.seguindo {
+    width: 1170px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 45px -15px rgba(2, 5, 132, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto 353px;
+}
+
+.perfil2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario {
+    width: 279px;
+    display: flex;
+}
+
+.usuario img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 0.44px solid #EFEFFF;
+    box-shadow: 0px 7.04px 19.8px -6.6px rgba(2, 5, 132, 0.2);
+    margin-right: 20px;
+}
+
+.perfil2 button {
+    padding: 15px 30px;
+    width: 171px;
+    background: #FFFFFF;
+    border: 1px solid #A4A4CB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202142;
+    margin-left: 100PX;
+}
+
+.img-btn2 {
+    width: 24px;
+    height: 24px;
+    background: #202142;
+    margin-right: 10px;
+}
+
+.galeria2 {
+    width: 688px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galeria2 img {
+    width: 216px;
+    height: 162px;
+}

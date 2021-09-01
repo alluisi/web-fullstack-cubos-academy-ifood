@@ -1,0 +1,90 @@
+body {
+    background: #FF7982;
+    padding: 70px 80px 0px 80px;
+    margin-bottom: 0;
+}
+
+.card {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.call-to-action {
+    background: rgb(9, 24, 63, 0.5);
+    box-shadow: 0px 14px 25px -10px rgba(9, 24, 63, 0.17);
+    border-radius: 10px;
+    color: #FFF;
+    max-width: 645px;
+    padding: 55px;
+}
+
+.produto {
+    max-width: 500px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px;
+}
+
+.produto-1 {
+    margin-bottom: 60px;
+}
+
+.call-to-action h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.call-to-action .btn {
+    color: #FFF;
+    background: #FF8E4F;
+}
+
+.produto h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    margin-bottom: 26px;
+}
+
+.produto p {
+    margin-bottom: 38px;
+}
+
+.produto .btn {
+    background: #FFFFFF;
+    border: 1px solid #09183F;
+    color: #09183F;
+}
+
+.produto .conteudo-card {
+    padding: 50px 60px 40px 60px;
+}
+
+p, a {
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+.container {
+    background: #F4F8FD;
+    padding-bottom: 30px;
+}
+
+.background {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    padding: 55px 0px;
+    margin-bottom: 70px;
+}

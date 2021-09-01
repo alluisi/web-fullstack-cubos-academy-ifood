@@ -1,0 +1,254 @@
+.hero-section {
+  height: 800px;
+
+  background-image: url('../assets/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+}
+
+.header {
+  padding: 40px;
+}
+
+.header__ul {
+  list-style: none;
+}
+
+.header__link {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  letter-spacing: -0.128571px;
+
+  color: #FFFFFF;
+
+  text-decoration: none;
+}
+
+.botao {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+
+  letter-spacing: -0.107143px;
+  text-transform: uppercase;
+
+  color: #24303E;
+
+  background-color: #FFF;
+  padding: 15px 30px;
+  border-radius: 28px;
+
+  text-decoration: none;
+}
+
+.hero-section__title {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.content-container {
+  padding: 120px;
+}
+
+.content-container__title {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+
+  color: #24303E;
+}
+
+.content-container__description {
+  max-width: 445px;
+
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+
+  letter-spacing: -0.128571px;
+
+  color: #808397;
+}
+
+.content-container__link {
+  text-decoration: none;
+
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #24303E;
+}
+
+.graphic-design-section {
+  background-image: url('../assets/image-graphic-design.jpg'); 
+}
+
+.photography-section {
+  background-image: url('../assets/image-photography.jpg');
+}
+
+.graphic-design-section,
+.photography-section {
+  background-position: center;
+  background-size: cover;
+  
+  height: 600px;
+
+  padding-bottom: 60px;
+}
+
+.graphic-design-section__title {
+  color: #24554A;
+}
+
+.photography-section__title {
+  color: #052C3B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.graphic-design-section__description {
+  color: #3E7467;
+}
+
+.photography-section__description {
+  color: #19536C;
+}
+
+.graphic-design-section__description,
+.photography-section__description {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.114286px;
+
+  max-width: 340px;
+}
+
+.graphic-design-section__title,
+.photography-section__title {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+.testimonials-section {
+  padding: 160px;
+}
+
+.testimonials-section__title {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+
+  letter-spacing: 5px;
+
+  color: #A7AAAD;
+}
+
+.testimonial__picture {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.testimonial__message {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+  letter-spacing: -0.128571px;
+
+  color: #5B636D;
+}
+
+.testimonial__name {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+
+  color: #24303E;
+}
+
+.testimonial__role {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+
+  text-align: center;
+  letter-spacing: -0.1px;
+
+  color: #A7AAAD;
+}
+
+.footer {
+  background: #90D4C6;
+  padding: 72px 0;
+}
+
+.footer__ul {
+  list-style: none;
+}
+
+.footer__link {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+
+  color: #458D7E;
+
+  text-decoration: none;
+}
+
+.social-media {
+  list-style: none;
+}

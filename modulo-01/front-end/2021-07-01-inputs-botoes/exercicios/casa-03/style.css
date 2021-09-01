@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8EFEF;
+}
+
+.container {
+    font-family: 'Mulish', sans-serif;
+    width: 610px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 246px auto;
+    padding: 64px 90px 56px;
+}
+
+.text h1 {
+    font-family: 'Rokkitt', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #161843;
+    margin-bottom: 15px;
+}
+
+.text p {
+    width: 339px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #161843;
+    margin-bottom: 52px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 430px;
+    height: 73px;
+    border: 1px solid #CAD6E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #717A91;
+    padding: 25px;
+    margin-bottom: 16px;
+}
+
+input::placeholder {
+    color: #343945;
+}
+
+input:focus {
+    border: 1px solid #26394F;
+}
+
+.next {
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0C6787;
+}
+
+.next button {
+    width: 157px;
+    height: 73px;
+    background: #046586;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.next button img {
+    margin-left: 14px;
+}
+
+.line {
+    width: 430px;
+    height: 0px;
+    border: 1px solid #CAD6E4;
+    margin-bottom: 15px;
+}
+
+.log {
+    font-weight: 400;
+    font-size: 14px;
+    color: #838A9E;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social button {
+    width: 207px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #CAD6E4;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.social button:focus {
+    border: 1px solid #26394F;
+}
+
+.social img {
+    margin-right: 10px;
+}
+
+.google {
+    margin-left: 16px;
+}
+
+footer {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}

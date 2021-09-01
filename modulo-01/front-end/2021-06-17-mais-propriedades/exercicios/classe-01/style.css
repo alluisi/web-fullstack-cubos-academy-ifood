@@ -1,0 +1,43 @@
+body {
+    background: #F5F5F5;
+    padding: 100px;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    padding: 35px 52px 70px 52px;
+    max-width: 432px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+.btn-fechar {
+    width: 30px;
+    margin-left: auto;
+}
+
+img {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 14px 62px;
+    border-radius: 5px;
+}
+
+.btn-vermelho {
+    background: #ED6755;
+}
+
+.btn-azul {
+    background: #1C1B5E;
+}
