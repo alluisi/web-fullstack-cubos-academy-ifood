@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+
+    background-color: peachpuff;
+
+    padding: 15px;
+}
+
+.card {
+    width: 120px;
+    height: 80px;
+
+    background-color: palevioletred;
+
+    margin: 0 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.card--blue {
+    background-color: cornflowerblue;
+
+    position: relative;
+    top: 50px;
+    left: 300px;
+}

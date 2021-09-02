@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/spacing.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="flex-row font-roboto">
+    <aside class="side-menu side-menu--closed flex-column">
+        <button class="side-menu__button side-menu__button--open">
+            <img src="./assets/closed-menu.svg" alt="Menu fechado">
+        </button>
+        <button class="side-menu__button flex-row align-center">
+            <img src="./assets/active-home.svg" alt="Home">
+            <span class="font-color__white ml-25">Início</span>
+        </button>
+        <button class="side-menu__button flex-row align-center">
+            <img src="./assets/inactive-like.svg" alt="Favoritos">
+            <span class="font-color__gray ml-25">Favoritos</span>
+        </button>
+        <button class="side-menu__button flex-row align-center mt-auto">
+            <img src="./assets/inactive-settings.svg" alt="Configurações">
+            <span class="font-color__gray ml-25">Configurações</span>
+        </button>
+    </aside>
+    <main class="main">
+        <h1 class="main__title">Início</h1>
+        <div class="galery flex-row flex-wrap justify-center">
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 1.png" alt="Hamster" data-index="0">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 2.png" alt="Gato" data-index="1">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 3.png" alt="Lobo" data-index="2">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 4.png" alt="Macaco" data-index="3">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 5.png" alt="Borboleta" data-index="4">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 6.png" alt="Leopardo" data-index="5">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 7.png" alt="Raposa" data-index="6">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 8.png" alt="Raposa branca" data-index="7">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 9.png" alt="Tartarua" data-index="8">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="galery__item">
+                <img class="item__like hidden" src="./assets/like.svg" alt="Like">
+                <img class="item__image" src="./assets/gallery/image 10.png" alt="Leão" data-index="9">
+                <div class="flex-row justify-between mt-20">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal hidden flex-row justify-center align-center">
+        <button class="modal__button modal__button--close">
+            <img src="./assets/close-modal.svg" alt="Fechar modal">
+        </button>
+        <div class="modal__container flex-row align-center">
+            <img class="modal__button modal__button--previous" src="./assets/prev.svg" alt="Anterior">
+            <img class="modal__image">
+            <img class="modal__like hidden" src="./assets/like.svg" alt="Like">
+            <img class="modal__button modal__button--next" src="./assets/next.svg" alt="Próximo">
+        </div>
+    </div>
+</body>
+
+</html>

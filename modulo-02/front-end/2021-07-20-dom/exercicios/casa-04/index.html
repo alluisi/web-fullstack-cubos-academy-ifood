@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Contatos</h1>
+
+    <ul class="contatos">
+        <li>
+            <img src="">
+            <div class="informacao-contato">
+                <div class="nome">1</div>
+                <div class="descricao"></div>
+            </div>
+        </li>
+        <li>
+            <img src="">
+            <div class="informacao-contato">
+                <div class="nome">2</div>
+                <div class="descricao"></div>
+            </div>
+        </li>
+        <li>
+            <img src="">
+            <div class="informacao-contato">
+                <div class="nome">3</div>
+                <div class="descricao"></div>
+            </div>
+        </li>
+        <li>
+            <img src="">
+            <div class="informacao-contato">
+                <div class="nome">4</div>
+                <div class="descricao"></div>
+            </div>
+        </li>
+        <li>
+            <img src="">
+            <div class="informacao-contato">
+                <div class="nome">5</div>
+                <div class="descricao"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+<script>
+    const caminhoImagens = './assets';
+    const contatos = [{
+        mensagens: 1024,
+        nome: 'Mãe ❤',
+        descricao: 'O Senhor é o meu pastor; de nada me faltará. (Salmos 23:1) 🙏🙏',
+        imagem: `${caminhoImagens}/alice.jpg`
+    }, {
+        mensagens: 645,
+        nome: 'Tio Omar',
+        descricao: 'Disponível',
+        imagem: `${caminhoImagens}/omar.jpg`
+    }, {
+        mensagens: 877,
+        nome: 'Irene RH',
+        descricao: 'Olá! Eu estou usando o WhatsApp.',
+        imagem: `${caminhoImagens}/irene.jpg`
+    }, {
+        mensagens: 30,
+        nome: 'Otavio Carona',
+        descricao: '',
+        imagem: `${caminhoImagens}/otavio.jpg`
+    }, {
+        mensagens: 190,
+        nome: 'Isaura',
+        descricao: '🌞',
+        imagem: `${caminhoImagens}/isaura.jpg`
+    }, {
+        mensagens: 249,
+        nome: 'Assistência Técnica',
+        descricao: 'Horário de atendimento 08:00 - 17:30',
+        imagem: `${caminhoImagens}/tiago.jpg`
+    }, {
+        mensagens: 581,
+        nome: 'Lurdes ONG animais',
+        descricao: '🐱🐶',
+        imagem: `${caminhoImagens}/lurdes.jpg`
+    }];
+
+    contatos.sort((a, b) => b.mensagens - a.mensagens);
+
+    const imagem = document.querySelectorAll('img');
+    const nome = document.querySelectorAll('.nome');
+    const descricao = document.querySelectorAll('.descricao');
+
+    for (let i = 0; i <= 4; i++) {
+        imagem[i].src = contatos[i].imagem;
+        nome[i].textContent = contatos[i].nome;
+        descricao[i].textContent = contatos[i].descricao;
+    }
+
+</script>
+
+</html>

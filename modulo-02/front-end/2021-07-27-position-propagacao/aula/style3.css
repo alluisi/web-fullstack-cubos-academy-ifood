@@ -1,0 +1,13 @@
+p {
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}

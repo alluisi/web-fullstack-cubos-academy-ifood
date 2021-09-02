@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <img>
+    <button type="button" onclick="imagemAleatoria()">Imagem aleatória</button>
+</body>
+
+<script>
+    const img = document.querySelector('img');
+    function imagemAleatoria() {
+        const id = Math.ceil(Math.random() * 100);
+        img.src = `https://picsum.photos/id/${id}/200/300`;
+    }
+</script>
+
+</html>

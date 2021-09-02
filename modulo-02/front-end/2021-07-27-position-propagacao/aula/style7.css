@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.gato {
+    position: relative;
+    left: 50px;
+    z-index: 1;
+}
+
+.cao {
+    position: relative;
+    bottom: 50px;
+}

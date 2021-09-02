@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" type="text/css" href="exercicio2.css">
+    <script src="exercicio2.js" defer></script>
+</head>
+
+<body>
+    <div class="login">
+        <H1>Cadastro</H1>
+    </div>
+    <form>
+        <div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" required>
+        </div>
+        <div>
+            <label for="confirmacao">Repita a senha</label>
+            <input id="confirmacao" type="password" required>
+        </div>
+        <div>
+            Já é cliente?
+            <label>Sim<input type="radio" name="eh-cliente"></label>
+            <label>Não<input type="radio" name="eh-cliente" checked></label>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>

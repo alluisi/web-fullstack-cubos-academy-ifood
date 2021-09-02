@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+input {
+    width: 300px;
+}
+
+ul {
+    width: 300px;
+    list-style: none;
+
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.completa {
+    text-decoration: line-through;
+}

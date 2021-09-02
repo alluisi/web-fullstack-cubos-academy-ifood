@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+
+    <style>
+        #titulo {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Olá, DOM!</h1>
+</body>
+<script>
+    const h1 = document.querySelector("h1");
+    // console.dir(h1); // propriedades
+    // console.log(h1.innerText); // textos visíveis (em tela)
+    // console.log(h1.textContent); // textos escondidos (HTML)
+
+    h1.textContent = "Olá mundo!"; // altera o texto
+    console.log(h1.textContent);
+
+    h1.id = "h1" // modifica o id
+</script>
+
+</html>

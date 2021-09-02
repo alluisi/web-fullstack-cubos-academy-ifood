@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoedas</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="cripto">Criptomoeda</label><br>
+            <select id="cripto" type="text">
+                <option value="">SELECIONE</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Ethereum</option>
+                <option value="LTC">Litecoin</option>
+            </select>
+        </div>
+        <p>Maior preço unitário negociado nas ultimas 24hrs: R$ <b class="valor"></b></p>
+        <p>Quantidade negociada nas ultimas 24hrs: R$ <b class="quantidade"></b></p>
+        <p>Maior preço de oferta de compra nas ultimas 24hrs: R$ <b class="oferta"></b></p>
+    </form>
+</body>
+
+</html>

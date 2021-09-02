@@ -1,0 +1,16 @@
+body {
+    padding: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.user {
+    background-color: #c3c3c3;
+
+    padding: 12px;
+    border-radius: 8px;
+
+    font-family: sans-serif;
+}

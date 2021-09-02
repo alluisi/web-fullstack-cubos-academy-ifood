@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.imagens {
+    display: flex;
+}
+
+.quadro {
+    border: 1px solid #000;
+    padding: 12px;
+    z-index: 0;
+}
+
+.quadro-1 {
+    position: relative;
+    left: 50px;
+}
+
+.gato {
+    position: relative;
+    z-index: 1; /*Não funciona porque está dentro do .quadro*/
+}
+
+.quadro-2 {
+    position: relative;
+    bottom: 50px;
+}

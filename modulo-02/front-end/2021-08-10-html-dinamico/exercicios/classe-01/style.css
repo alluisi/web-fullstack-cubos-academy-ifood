@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.busca {
+    margin: 10px 0;
+}
+
+.paises {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pais {
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: #c3c3c3;
+
+    padding: 12px;
+    border-radius: 8px;
+
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.esconder {
+    display: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "back-integral-datas-em-js",
+  "version": "1.0.0",
+  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alluisi/back-integral-datas-em-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alluisi/back-integral-datas-em-js/issues"
+  },
+  "homepage": "https://github.com/alluisi/back-integral-datas-em-js#readme",
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  }
+}
