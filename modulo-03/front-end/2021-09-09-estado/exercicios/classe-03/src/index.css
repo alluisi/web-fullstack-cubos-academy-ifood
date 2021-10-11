@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F5F5F5;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: #FFFFFF;
+    width: 300px;
+    height: 430px;
+    filter: drop-shadow(0px 4px 24px rgba(255, 255, 255, 0.25));
+    position: relative;
+}
+
+.card img {
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #131E30;
+    margin-bottom: 8px;
+}
+
+.descricao p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #131E30;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 15px;
+}
+
+.botoes button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 46px;
+    background-color: #459275;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #EFF5FF;
+}
+
+.botoes span {
+    font-family: 'Mulish', sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #131E30;;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React com JSX</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        const botao = <button>Clique aqui</button>;
+        const root = document.querySelector('#root');
+        const root2 = document.querySelector('#root2');
+
+        ReactDOM.render(botao, root);
+        ReactDOM.render(botao, root2);
+    </script>
+</body>
+
+</html>

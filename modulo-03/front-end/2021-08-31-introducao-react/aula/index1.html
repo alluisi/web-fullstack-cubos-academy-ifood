@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+</head>
+
+<body>
+    <div class="button_container"></div>
+    <div class="button_container2"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        const botao = React.createElement('button', { style: { background: 'black', color: 'white' } }, 'Clique aqui');
+        const divBotao = document.querySelector('.button_container');
+        const divBotao2 = document.querySelector('.button_container2');
+
+        ReactDOM.render(botao, divBotao);
+        ReactDOM.render(botao, divBotao2);
+    </script>
+</body>
+
+</html>

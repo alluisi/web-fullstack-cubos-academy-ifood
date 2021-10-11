@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.side-menu {
+    background-color: #313131;
+
+    padding: 20px;
+
+    gap: 40px;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.side-menu span {
+    font-size: 20px;
+}
+
+.side-menu__button {
+    all: unset;
+    cursor: pointer;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.main {
+    flex-grow: 1;
+
+    text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.main__title {
+    font-size: 36px;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.galery {
+    gap: 30px;
+}
+
+.galery__item {
+    position: relative;
+}
+
+.item__like {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.item__image {
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.6);
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal__button {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+  
+.modal__button--close {
+    position: absolute;
+  
+    top: 90px;
+    right: 45px;
+}
+  
+.modal__container {
+    position: relative;
+}
+  
+.modal__image {
+    width: 500px;
+    height: auto;
+}
+
+.modal__like {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.modal__button--previous {
+    position: absolute;
+    left: -100px;
+}
+  
+.modal__button--next {
+    position: absolute;
+    right: -100px;
+}
+
+/* FONTS */
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-color__white {
+    color: #FFFFFF;
+}
+
+.font-color__gray {
+    color: #888888;
+}
+
+/* SPACING */
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+/* LAYOUT */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}

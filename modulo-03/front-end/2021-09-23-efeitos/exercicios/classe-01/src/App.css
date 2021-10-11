@@ -1,0 +1,43 @@
+.main {
+    margin:0;
+    padding:0;
+   
+}
+
+.filter {
+    padding: 20px;
+    text-align: center;
+}
+
+.filter > form > input {
+    padding: 10px;;
+    font-size: 20px;
+    width: 50%;
+
+}
+
+.countries {
+    position: absolute;
+}
+
+.inactive {
+    display: block;
+}
+
+.inactive {
+    display: none;
+} 
+
+
+
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+}
+.main {
+    position: absolute;
+    width: 100%;
+  
+}
+*/

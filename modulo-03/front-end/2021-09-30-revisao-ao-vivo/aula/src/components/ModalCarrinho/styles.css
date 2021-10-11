@@ -1,0 +1,88 @@
+.modal{
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(32, 32, 32, 0.6);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  z-index: 4;
+}
+
+.modal-content {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  padding: 20px; 
+  background: #ffffff;  
+  border-radius: 16px;  
+  box-shadow: 0px 4px 16px rgba(50, 50, 50, 0.4); 
+}
+
+.div-table {
+  display: table;         
+  width: auto;         
+  background-color: #eee;         
+  border: 1px solid #666666;         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 220px;         
+  background-color: #ccc;  
+}
+
+.cancelar {
+  position: absolute;
+  z-index: 5;
+  right: 50px;
+  cursor: pointer;
+  top: 50px;
+}
+
+.endereco {
+  width: 850px;
+  margin-top: 20px;
+  border: 2px solid silver;
+  padding: 20px;
+  text-align: center;
+}
+
+.endereco-cep {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.endereco-input {
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+
+.endereco-item {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.endereco-btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 1rem;
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	background-color: #f5f5f5;
+
+    padding-top: 200px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body * {
+	font-family: 'Zilla Slab', serif;
+}
+
+body > * {
+	width: 35rem;
+}
+
+h1 {
+	color: palevioletred;
+}
+
+.title {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height */
+
+    letter-spacing: 15px;
+
+    color: #FFFFFF;
+}
+
+.input-filter {
+    width: 560px;
+    height: 64px;
+    left: 450px;
+    top: 158px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    top: calc(50% - 18px/2);
+
+    letter-spacing: -0.25px;
+
+    color: #9495A5;
+}
+
+.card {
+	background-color: white;
+	padding: 1rem;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+              0 2px 4px rgba(0,0,0,0.07), 
+              0 4px 8px rgba(0,0,0,0.07), 
+              0 8px 16px rgba(0,0,0,0.07),
+              0 16px 32px rgba(0,0,0,0.07), 
+              0 32px 64px rgba(0,0,0,0.07);
+}
+
+form {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.input-tarefa, li span {
+	font-size: 1.5rem;
+}
+
+.input-tarefa {
+	margin-left: 0.5rem;
+	flex-grow: 1;
+}
+
+.rodape {
+	font-size: 0.95em;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+button {
+	border: 1px solid transparent;
+	background-color: transparent;
+	padding: 0.2em 0.3em;
+}
+
+.filtros button.ativo {
+	border: 1px solid palevioletred;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	margin: 0.5rem 0;
+}
+
+li:hover button {
+	visibility: visible;
+}
+
+li input {
+	margin-right: 0.5rem;
+}
+
+li button {
+	visibility: hidden;
+	margin-left: auto;
+	color: palevioletred;
+}
+
+li.completada span {
+	text-decoration: line-through;
+}
+
+.selected {
+    cursor: pointer;
+}
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    min-height: 100vh;
+
+    background-image: url('./assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+
+    color: #FFF;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 10px;
+    margin-bottom: 10px;
+} */

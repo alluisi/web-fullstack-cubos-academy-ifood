@@ -1,0 +1,22 @@
+.filtro {
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.filtro > input {
+    width: 800px;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+.cards {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    width: 100%;
+}

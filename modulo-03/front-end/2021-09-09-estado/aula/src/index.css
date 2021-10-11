@@ -1,0 +1,52 @@
+/* CONTADOR, CALBACK e CONTAGEM */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  font-size: 300%;
+}
+
+.App button {
+  font-size: 60%;
+}
+
+/* TEMA */
+/* body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.claro {
+  background-color: white;
+  color: black;
+}
+
+.escuro {
+  background-color: black;
+  color: white;
+} */
+
+/* MENSAGEM */
+/* body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+} */

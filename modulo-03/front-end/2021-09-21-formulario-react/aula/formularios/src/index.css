@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.alert {
+    max-width: max-content;
+    padding: 12px;
+    background-color: hsl(0, 60%, 70%);
+}
+
+/* .senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+} */

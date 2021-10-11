@@ -1,0 +1,23 @@
+.menu {
+  position: fixed;
+  background-color: silver;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.left {
+  float: left;
+  padding: 20px;
+}
+
+.right {
+  float: right;
+  padding: 20px;
+}
+
+.menu-item {
+  cursor: pointer;
+}
