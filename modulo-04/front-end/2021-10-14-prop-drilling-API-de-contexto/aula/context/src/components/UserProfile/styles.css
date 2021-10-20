@@ -1,0 +1,8 @@
+.container-profile div {
+  width: 200px;
+  margin: 5px;
+}
+
+.container-profile strong {
+  margin-right: 10px;
+}

@@ -1,0 +1,12 @@
+.App {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+div:not(.App) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
