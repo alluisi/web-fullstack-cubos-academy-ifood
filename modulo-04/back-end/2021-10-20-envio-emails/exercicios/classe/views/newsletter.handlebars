@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .nome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+        }
+
+        .container-email {
+            width: 100%;
+            padding: 40px;
+            background: rgb(231, 231, 231);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mensagem {
+            width: 540px;
+            padding: 62px;
+            background: #FFFFFF;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .mensagem p {
+            text-align: center;
+            margin-bottom: 54px;
+        }
+
+        .contatos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .newsletter {
+            width: 240px;
+            padding: 12px;
+            background: #FFFFFF;
+            border: 1px solid gray;
+        }
+    </style>
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <h1 class="nome">{{ nome }} fique por dentro de tudo que acontece!</h1>
+    <div class="container-email">
+        <div class="mensagem">
+            <p>{{ texto }}</p>
+        </div>
+        <div class="contatos">
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>SAC</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
