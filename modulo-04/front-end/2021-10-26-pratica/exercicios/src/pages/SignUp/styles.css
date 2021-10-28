@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  height: 100vh;
+}
+
+main div {
+  width: 50%;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.btn-cancel {
+  margin-top: 8px;
+}
+
+.btn-register {
+  margin-top: 72px;
+}
+
+.container-left form h2 {
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.login-link {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-top: 96px;
+}
+
+.login-link span {
+  margin-left: 10px;
+}

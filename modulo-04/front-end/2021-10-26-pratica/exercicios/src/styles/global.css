@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  height: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-positive {
+  background-color: #04C35C;
+}
+
+.btn-negative {
+  background: rgba(251, 6, 21, 0.65);
+}
+
+.backdrop {
+  background: rgba(16, 15, 15, 0.56);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,31 @@
+.container-modal-delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  width: 394px;
+  height: 263px;
+  padding: 56px;
+  background-color: #fffdfd;
+  text-align: center;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.buttons-confirm button {
+  width: 100%;
+}
+
+.btn-confirm-delete {
+  margin-top: 32px;
+}
+
+.btn-cancel-delete {
+  margin-top: 8px;
+}

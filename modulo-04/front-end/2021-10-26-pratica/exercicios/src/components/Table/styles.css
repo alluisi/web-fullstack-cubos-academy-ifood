@@ -1,0 +1,55 @@
+.container-table {
+  width: 100%;
+}
+
+.header-table {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  background: #F4F0F0;
+  text-align: left;
+  padding: 0 24px;
+}
+
+.header-table strong {
+  width: 25%;
+}
+
+.body-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-table {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  background: #FFFAFA;
+  text-align: left;
+  position: relative;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.line-table:first-child {
+  margin-top: 24px;
+}
+
+.line-table span {
+  width: 25%;
+}
+
+.action-buttons {
+  display: flex;
+  position: absolute;
+  right: 32px
+}
+
+.action-buttons img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.action-buttons img:first-child {
+  margin-right: 8px;
+}
