@@ -1,40 +1,56 @@
 const knex = require('../conexao');
 const bcrypt = require('bcrypt');
+const nodemailer = require('../servicos/nodemailer');
 
 const cadastrarUsuario = async (req, res) => {
-    const { username, senha } = req.body;
+    const { nome, email, senha, nome_loja } = req.body;
 
-    if (!username) {
-        return res.status(404).json("O campo username é obrigatório");
+    if (!nome) {
+        return res.status(404).json("O campo nome é obrigatório");
+    }
+
+    if (!email) {
+        return res.status(404).json("O campo email é obrigatório");
     }
 
     if (!senha) {
         return res.status(404).json("O campo senha é obrigatório");
     }
 
-    if (senha.length < 5) {
-        return res.status(404).json("A senha deve conter, no mínimo, 5 caracteres.");
+    if (!nome_loja) {
+        return res.status(404).json("O campo nome_loja é obrigatório");
     }
 
     try {
-        const quantidadeUsuarios = await knex('usuarios').where({ username }).first();
+        const quantidadeUsuarios = await knex('usuarios').where({ email }).first();
 
         if (quantidadeUsuarios) {
-            return res.status(400).json("O username informado já existe");
+            return res.status(400).json("O email já existe");
         }
 
         const senhaCriptografada = await bcrypt.hash(senha, 10);
 
         const usuario = await knex('usuarios').insert({
-            username,
-            senha: senhaCriptografada
-        });
+            nome,
+            email,
+            senha: senhaCriptografada,
+            nome_loja
+        }).returning('*');
 
         if (!usuario) {
             return res.status(400).json("O usuário não foi cadastrado.");
         }
 
-        return res.status(200).json("Usuário cadastrado com sucesso");
+        const dadosEnvio = {
+            from: 'Market Place <nao-responder@alunoscubosacademy.com.br>',
+            to: usuario.email,
+            subject: 'Notificação - Cadastro no Market Place',
+            text: `Olá ${usuario.nome}. Você acabou de fazer um cadastro na plataforma Market Place. Bem vindo!`
+        }
+
+        nodemailer.sendMail(dadosEnvio);
+
+        return res.status(200).json(usuario[0]);
     } catch (error) {
         return res.status(400).json(error.message);
     }
@@ -45,30 +61,21 @@ const obterPerfil = async (req, res) => {
 }
 
 const atualizarPerfil = async (req, res) => {
-    let {
-        nome,
-        email,
-        senha,
-        imagem,
-        username,
-        site,
-        bio,
-        telefone,
-        genero
-    } = req.body;
-
+    let { nome, email, senha, nome_loja } = req.body;
     const { id } = req.usuario;
 
-    if (!nome && !email && !senha && !imagem && !username && !site && !bio && !telefone && !genero) {
+    if (!nome && !email && !senha && !nome_loja) {
         return res.status(404).json('É obrigatório informar ao menos um campo para atualização');
     }
 
     try {
-        if (senha) {
-            if (senha.length < 5) {
-                return res.status(404).json("A senha deve conter, no mínimo, 5 caracteres.");
-            }
+        const usuarioExiste = await knex('usuarios').where({ id }).first();
 
+        if (!usuarioExiste) {
+            return res.status(404).json('Usuario não encontrado');
+        }
+
+        if (senha) {
             senha = await bcrypt.hash(senha, 10);
         }
 
@@ -80,26 +87,13 @@ const atualizarPerfil = async (req, res) => {
             }
         }
 
-        if (username !== req.usuario.username) {
-            const usernameUsuarioExiste = await knex('usuarios').where({ username }).first();
-
-            if (usernameUsuarioExiste) {
-                return res.status(404).json('O username já existe.');
-            }
-        }
-
         const usuarioAtualizado = await knex('usuarios')
             .where({ id })
             .update({
                 nome,
                 email,
                 senha,
-                imagem,
-                username,
-                site,
-                bio,
-                telefone,
-                genero
+                nome_loja
             });
 
         if (!usuarioAtualizado) {

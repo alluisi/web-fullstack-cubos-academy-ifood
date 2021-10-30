@@ -2,9 +2,9 @@ const knex = require('../conexao');
 
 const enviarPostagem = async (req, res) => {
     const { id } = req.usuario;
-    const { descricao, imagem } = req.body;
+    const { descricao, fotos } = req.body;
 
-    if (!imagem || imagem.length === 0) {
+    if (!fotos || fotos.length === 0) {
         return res.status(404).json("É necessário enviar ao menos uma foto.");
     }
 
@@ -15,11 +15,11 @@ const enviarPostagem = async (req, res) => {
             return res.status(400).json("Não foi possível concluir a postagem.");
         }
 
-        for (const foto of imagem) {
-            foto.postagem_id = postagem[0].id;
+        for (const imagem of fotos) {
+            imagem.postagem_id = postagem[0].id;
         }
 
-        const imagensCadastradas = await knex('postagens_fotos').insert(imagem);
+        const imagensCadastradas = await knex('postagens_fotos').insert(fotos);
 
         if (!imagensCadastradas) {
             await knex('postagens').where({ id: postagem[0].id }).del();

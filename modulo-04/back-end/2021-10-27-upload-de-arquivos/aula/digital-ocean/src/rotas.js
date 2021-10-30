@@ -2,6 +2,7 @@ const express = require('express');
 const usuarios = require('./controladores/usuarios');
 const login = require('./controladores/login');
 const postagens = require('./controladores/postagens');
+const uploads = require('./controladores/uploads');
 const verificaLogin = require('./filtros/verificaLogin');
 
 const rotas = express();
@@ -11,6 +12,9 @@ rotas.post('/cadastro', usuarios.cadastrarUsuario);
 
 // login
 rotas.post('/login', login.login);
+
+// upload
+rotas.post('/upload', uploads.upload);
 
 // filtro para verificar usuario logado
 rotas.use(verificaLogin);

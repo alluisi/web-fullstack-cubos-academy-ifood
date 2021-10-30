@@ -1,5 +1,6 @@
 const knex = require('../conexao');
 const bcrypt = require('bcrypt');
+const AWS = require('../servicos/aws');
 
 const cadastrarUsuario = async (req, res) => {
     const { username, senha } = req.body;
@@ -86,6 +87,11 @@ const atualizarPerfil = async (req, res) => {
             if (usernameUsuarioExiste) {
                 return res.status(404).json('O username já existe.');
             }
+        }
+
+        // fazer endpoint de exclusão de imagem
+        if (imagem === null && req.usuario.imagem) {
+            await AWS.excluirImagem(req.usuario.imagem);
         }
 
         const usuarioAtualizado = await knex('usuarios')
