@@ -1,0 +1,58 @@
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.container-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-diary {
+  width: 50%;
+}
+
+.container-left form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.btn-cancel {
+  margin-top: 0.8rem;
+}
+
+.btn-register {
+  margin-top: 7.2rem;
+}
+
+.container-left form h2 {
+  margin: 0 0 3.2rem 0;
+  text-align: center;
+}
+
+.login-link {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-top: 9.6rem;
+}
+
+.login-link span {
+  margin-left: 1rem;
+}
+
+@media (max-width: 840px) {
+  .container-diary {
+    display: none;
+  }
+  .container-left {
+    width: 100%;
+  }
+  .container-left form {
+    width: 80vw;
+  }
+}

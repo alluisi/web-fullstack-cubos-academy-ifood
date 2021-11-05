@@ -1,0 +1,58 @@
+html {
+    /* font-size: 16px; padrão */
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.second-text {
+    font-size: 1.6rem; /* 16px */
+}
+
+h2 {
+    font-size: 2.8rem; /* 28px */
+}
+
+.container {
+    /* width: 100vw;
+    height: 100vh;
+    background-color: black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container div {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    background-color: green;
+}
+
+.middle {
+    display: none;
+    background-color: indigo;
+}
+
+.right {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90vw;
+    }
+    .container div {
+        height: 100px;
+    }
+    .middle {
+        display: block;
+    }
+}

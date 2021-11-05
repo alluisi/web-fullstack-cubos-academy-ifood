@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.container-cel {
+  width: 50%;
+}
+
+.container-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-right form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.container-right form h1 {
+  margin: 0 0 3.2rem 0;
+}
+
+.btn-login {
+  margin-top: 7.2rem;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-top: 9.6rem;
+}
+
+.register-link span {
+  margin-right: 1rem;
+}
+
+@media (max-width: 840px) {
+  .container-cel {
+    display: none;
+  }
+  .container-right {
+    width: 100%;
+  }
+  .container-right form {
+    width: 80vw;
+  }
+}
