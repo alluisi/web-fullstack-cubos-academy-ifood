@@ -1,0 +1,82 @@
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header header" "main bag";
+  gap: 24px 50px;
+  background-color: #1D2226;
+}
+
+.App > header {
+  grid-area: header;
+}
+
+.App > main {
+  grid-area: main;
+}
+
+.App > .bag {
+  grid-area: bag;
+  margin-right: 96px;
+}
+
+.content {
+  padding-left: 96px;
+  padding-bottom: 24px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.top-movies {
+  margin-bottom: 40px;
+}
+
+.top-movies h2, .movies h2 {
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.movies-grid {
+  max-width: 937px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 168px);
+  gap: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.filter {
+  all: unset;
+  font-family: 'Open Sans', sans-serif;
+  flex-basis: 168px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  padding: 5px;
+  background: rgba(225, 131, 200, 0.2);
+  opacity: 0.2;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.filter:not(.filter--active):hover {
+  opacity: 1;
+  border: 2px solid #E183C8;
+  color: #E183C8;
+  background: transparent;
+}
+
+.filter.filter--active {
+  opacity: 1;
+  border: 2px solid #E183C8;
+  color: #E183C8;
+}
+
+.movies .search-container {
+  display: none;
+}

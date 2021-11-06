@@ -1,0 +1,28 @@
+.header {
+  background: #0F1C26;
+  color: #FDFDFD;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 24px 100px 24px 70px;
+}
+
+.header__logo {
+  margin-right: 42px;
+}
+
+.header__item-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-container__img {
+  object-fit: contain;
+  width: 56px;
+  height: 56px;
+}
+
+.mr-95 {
+  margin-right: 95px;
+}

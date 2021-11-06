@@ -1,0 +1,40 @@
+.price-button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.price-button.movie {
+  padding: 5px 8px;
+  font-size: 12px;
+  background: #A785ED;
+  color: #EEE5FF;
+}
+
+.price-button.basket {
+  padding: 16px;
+  font-size: 16px;
+  background: #E25EBF;
+  color: #FDFDFD;
+}
+
+.price-button.movie:hover {
+  background: linear-gradient(0deg, rgba(46, 46, 46, 0.45), rgba(46, 46, 46, 0.45)), #A785ED;
+}
+
+.price-button.movie:active {
+  background: linear-gradient(0deg, rgba(123, 123, 123, 0.45), rgba(123, 123, 123, 0.45)), #A785ED;
+}
+
+.price-button.basket:hover {
+  background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
+  box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.price-button.basket:active {
+  background: linear-gradient(0deg, rgba(225, 123, 123, 0.6), rgba(225, 123, 123, 0.6)), #FFB6EB;
+box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}

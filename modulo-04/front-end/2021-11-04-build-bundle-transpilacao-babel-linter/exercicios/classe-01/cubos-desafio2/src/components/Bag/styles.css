@@ -1,0 +1,117 @@
+.bag {
+    width: 312px;
+    height: 560px;
+    color: #fff;
+    position: sticky;
+    top: 127px;
+    overflow-y: auto;
+    background-color: #1d2226;
+}
+
+.bag .bag__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #a785ed, #a785ed), #c4c4c4;
+    align-self: center;
+}
+
+.bag .bag__container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    gap: 24px;
+    padding: 40px 16px;
+}
+
+.bag__container h3 {
+    font-size: 16px;
+    align-self: center;
+}
+
+.bag__container h2,
+.bag__container .bag__illustration {
+    align-self: center;
+}
+
+.coupon-container span {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.coupon-container__input-group {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+}
+
+.coupon-container__input {
+    width: 100%;
+    padding: 16px 14px;
+    border: 0;
+    outline: 0;
+    background: #0b1217;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.coupon-container__input:hover {
+    border: 1px solid #8c8c8c;
+}
+
+.coupon-container__input:focus {
+    border: 1px solid #fdfdfd;
+}
+
+.coupon-container__input::placeholder {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    color: #fdfdfd;
+    opacity: 0.7;
+}
+
+.coupon-container__icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+}
+
+.bag__movie {
+    display: flex;
+    align-items: center;
+}
+
+.bag__movie img {
+    width: 45px;
+    height: 65px;
+    margin-right: 13px;
+}
+
+.bag__movie__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bag__movie__actions {
+    display: flex;
+    gap: 14px;
+}
+
+.bag__movie__actions svg:hover {
+    background: linear-gradient(0deg, rgba(107, 107, 107, 0.37), rgba(107, 107, 107, 0.37));
+}
+
+.bag__movie__actions svg:active {
+    background: linear-gradient(0deg, rgba(191, 191, 191, 0.37), rgba(191, 191, 191, 0.37));
+}
+
+.bag__movie__actions svg {
+    cursor: pointer;
+}
