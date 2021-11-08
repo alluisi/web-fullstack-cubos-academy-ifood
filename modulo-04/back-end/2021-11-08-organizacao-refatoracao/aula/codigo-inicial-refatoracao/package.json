@@ -1,0 +1,20 @@
+{
+  "name": "aula-refatoracao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.7",
+    "nodemon": "^2.0.12",
+    "pg": "^8.6.0"
+  }
+}
