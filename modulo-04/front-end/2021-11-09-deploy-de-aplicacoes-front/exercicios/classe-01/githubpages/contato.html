@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/contact.css">
+   <title>Desafio Front-end 01 - Contato</title>
+</head>
+<body class="grid">
+   <header class="flex">
+      <img src="assets/img/svg/logo.svg" alt="Logo do blog">
+      <ul class="flex">
+         <a href="index.html"><li>Início</li></a>
+         <a href="#"><li>Sobre</li></a>
+         <a href="contato.html"><li>Contato</li></a>
+      </ul>
+   </header>
+
+   <section class="flex main">
+
+      <div class="grid contact">
+         <div class="contact-header">
+            <h1>Contato</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. </p>
+         </div>
+
+         <div class="contact-info">
+            <h3>INFORMAÇÕES PARA CONTATO</h3>
+            <div class="flex item">
+               <div class="flex item-header">
+                  <img src="assets/img/svg/localizacao.svg" alt="">
+                  <h4>Endereço</h4>
+               </div>
+               <p>Av. Tancredo Neves, 2227, Ed. Salvador Prime Caminho das Árvores, Salvador • Bahia</p>
+            </div>
+            <div class="flex item">
+               <div class="flex item-header">
+                  <img src="assets/img/svg/telefone.svg" alt="">
+                  <h4>Telefone</h4>
+               </div>
+               <p>(71) 9 9999-9999 | (11) 1 1111-1111</p>
+            </div>
+            <div class="flex item">
+               <div class="flex item-header">
+                  <img src="assets/img/svg/headset.svg" alt="">
+                  <h4>Suporte</h4>
+               </div>
+               <p>suporte@cubos.academy</p>
+            </div>
+         </div>
+
+         <div class="contact-area">
+            <h1>Entre em contato</h1>
+            <form class="grid form-contact">
+               <label class="name" for="name">Nome</label>
+               <input type="text" id="name">
+
+               <label class="email" for="email">E-mail</label>
+               <input type="email" id="email">
+
+               <label class="subject" for="subject">Assunto</label>
+               <input type="text" id="subject">
+
+               <label class="coment" for="coment">Comentário</label>
+               <textarea name="" id="coment" cols="30" rows="10"></textarea>
+
+               <button>Enviar</button>
+            </form>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="grid aside">
+      <input type="text" name="search" id="search" placeholder="Pesquise aqui...">
+      <div class="categories">
+         <h3>Categorias</h3>
+         <ul>
+            <li><div class="flex categories-item"><p>Tecnologia</p> <p>25</p> </div></li>
+            <li><div class="flex categories-item"><p>Estilo de vida</p> <p>8</p></div></li>
+            <li><div class="flex categories-item"><p>Arte</p> <p>2</p> </div></li>
+            <li><div class="flex categories-item"><p>Comida</p> <p>12</p> </div></li>
+            <li><div class="flex categories-item"><p>Aventura</p> <p>9</p> </div></li>
+            <li><div class="flex categories-item"><p>Moda</p> <p>12</p> </div></li>
+         </ul>
+      </div>
+
+      <div class="ads">
+         <h3>Publicidade</h3>
+         <div class="flex ads-content">
+            <div class="flex ads-img">340 x 240</div>
+            <div class="flex ads-img">340 x 240</div>
+            <div class="flex ads-img">340 x 240</div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="flex">
+      <p>Copyright ©2021 Todos os direitos reservados | by Gabriel Espinosa</p>
+   </footer>
+</body>
+</html>

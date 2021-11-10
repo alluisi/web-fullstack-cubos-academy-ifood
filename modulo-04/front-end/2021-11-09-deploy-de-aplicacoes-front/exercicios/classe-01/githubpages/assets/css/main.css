@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    all: unset;
+    color: #545454;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #fe0078;
+}
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: #e5e5e5;
+    min-width: 100vh;
+    min-height: 100vh;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-items: center;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    height: 70px;
+    width: 100%;
+    margin-bottom: auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+header img {
+    margin-left: 100px;
+}
+
+header ul {
+    list-style-type: none;
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 100px;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
+
+.main {
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.main .content {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: min-content;
+    height: min-content;
+    margin-bottom: 40px;
+    grid-template-areas:
+        "cheader cheader"
+        "date date"
+        "img img"
+        "pcontent pcontent"
+        "button button";
+}
+
+.main .content h2 {
+    grid-area: cheader;
+    margin: 20px 0px 0px 30px;
+}
+
+.main .content .date {
+    margin: 20px 0px 20px 30px;
+    grid-area: date;
+    font-size: 12px;
+}
+.main .content p {
+    color: #929292;
+    font-weight: 400;
+}
+
+.main .content div.pcontent {
+    grid-area: pcontent;
+    margin: 0px 30px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.main .content div.pcontent p {
+    margin: 20px 0px;
+}
+
+.main .content a {
+    grid-area: button;
+    margin: 0px 30px 20px auto;
+}
+
+button {
+    all: unset;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fe0078;
+    color: #929292;
+    width: 150px;
+    height: 43px;
+    text-align: center;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #fe0078;
+    color: #fff;
+    cursor: pointer;
+}
+
+.aside {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    grid-area: aside;
+    grid-template-areas:
+        "search"
+        "categories"
+        "ads";
+    row-gap: 20px;
+    width: min-content;
+    height: min-content;
+}
+
+.aside input[type="text"] {
+    grid-area: search;
+    all: unset;
+    width: 340px;
+    height: min-content;
+    margin: 20px;
+    padding: 20px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.aside input[type="text"]:focus {
+    border-color: #fe0078;
+}
+
+.aside .categories {
+    grid-area: categories;
+    margin: 20px;
+}
+
+.aside .categories ul li {
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 2px dashed #eeeeee;
+    color: #545454;
+}
+.aside .categories ul li:hover {
+    color: #fe0078;
+    border-color: #fe0078;
+    cursor: pointer;
+}
+
+.aside .categories ul li div {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.aside h3 {
+    border-left: 2px solid #fe0078;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.aside .ads {
+    margin: 20px;
+}
+
+.aside .ads .ads-content {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .ads .ads-img {
+    background-color: #eeeeee;
+    width: 340px;
+    height: 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #545454;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}

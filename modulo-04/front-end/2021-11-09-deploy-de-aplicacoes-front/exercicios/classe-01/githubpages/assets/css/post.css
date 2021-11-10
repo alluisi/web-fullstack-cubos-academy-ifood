@@ -1,0 +1,83 @@
+.post p {
+    color: #000 !important;
+}
+
+.post ul {
+    margin-left: 30px;
+}
+.post ul ul li {
+    margin-left: 50px;
+}
+
+.coments {
+    height: 444px;
+    width: 732px;
+}
+
+.form {
+    grid-template-areas:
+        "name email"
+        "inputName inputEmail"
+        "coment coment"
+        "textarea textarea"
+        "button button";
+    grid-template-rows: 15px 0.5fr 15px 3fr 0.5fr;
+    margin-top: 40px;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+.coments form label.name {
+    grid-area: name;
+}
+
+.coments form label.email {
+    grid-area: email;
+}
+
+.coments form input[type="text"] {
+    grid-area: inputName;
+}
+
+.coments form input[type="email"] {
+    grid-area: inputEmail;
+}
+
+.coments form label.coment {
+    grid-area: coment;
+}
+
+.coments form textarea {
+    grid-area: textarea;
+}
+
+.coments form button {
+    margin-top: 40px;
+    grid-area: button;
+    background-color: #fe0078;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: auto;
+}
+
+.coments form textarea {
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    resize: none;
+    border-radius: 2px;
+}
+
+.coments form input[type="text"],
+.coments form input[type="email"] {
+    all: unset;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.coments form input[type="text"]:focus,
+.coments form input[type="email"]:focus,
+.coments form textarea:focus {
+    border-color: #fe0078;
+    outline: none;
+}

@@ -1,0 +1,23 @@
+.sidebar-container {
+  flex-shrink: 0;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  justify-content: center;
+  justify-items: center;
+  gap: 45px;
+  background-color: #434343;
+  min-height: 100vh;
+  width: 138px;
+  padding: 100px 50px;
+  border-bottom-right-radius: 32px;
+}
+
+.sidebar-container {
+  cursor: pointer;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+}

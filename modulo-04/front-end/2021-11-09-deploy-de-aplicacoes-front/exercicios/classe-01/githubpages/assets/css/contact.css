@@ -1,0 +1,125 @@
+.contact {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 730px;
+    grid-template-areas:
+        "cont-header cont-header"
+        "info info"
+        "cont-form cont-form";
+    grid-template-columns: 1fr 1fr;
+}
+
+.main .contact .contact-header {
+    grid-area: cont-header;
+    margin: 30px;
+}
+
+.main .contact .contact-header p {
+    margin-top: 30px;
+}
+.main .contact .contact-info {
+    grid-area: info;
+    margin: 30px;
+}
+.main .contact .contact-area {
+    grid-area: cont-form;
+    margin: 30px;
+}
+
+.item {
+    height: 70px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.item .item-header {
+    justify-content: flex-start;
+}
+
+.item .item-header img,
+.item .item-header h4 {
+    margin: 0px 5px;
+}
+
+.contact-area .form-contact {
+    grid-template-areas:
+        "con-lbl-name      con-lbl-email"
+        "con-input-name    con-input-email"
+        "con-lbl-subject   con-lbl-subject"
+        "con-input-subject  con-input-subject"
+        "con-lbl-coment    con-lbl-coment"
+        "con-input-coment  con-input-coment"
+        "con-button        con-button";
+    grid-template-rows: 15px 0.5fr 15px 3fr 0.5fr;
+    margin-top: 40px;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+.contact-area .form-contact label.name {
+    grid-area: con-lbl-name;
+}
+.contact-area .form-contact label.email {
+    grid-area: con-lbl-email;
+}
+
+.contact-area .form-contact input#name {
+    grid-area: con-input-name;
+}
+
+.contact-area .form-contact input#email {
+    grid-area: con-input-email;
+}
+
+.contact-area .form-contact label.subject {
+    grid-area: con-lbl-subject;
+}
+
+.contact-area .form-contact input#subject {
+    grid-area: con-input-subject;
+}
+
+.contact-area .form-contact label.coment {
+    grid-area: con-lbl-coment;
+}
+
+.contact-area .form-contact textarea {
+    grid-area: con-input-coment;
+}
+
+.contact-area .form-contact button {
+    grid-area: con-button;
+}
+
+.contact-area form button {
+    margin-top: 40px;
+    grid-area: button;
+    background-color: #fe0078;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: auto;
+}
+
+.contact-area form textarea {
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    resize: none;
+    border-radius: 2px;
+}
+
+.contact-area form input[type="text"],
+.contact-area form input[type="email"] {
+    all: unset;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.contact-area form input[type="text"]:focus,
+.contact-area form input[type="email"]:focus,
+.contact-area form textarea:focus {
+    border-color: #fe0078;
+    outline: none;
+}
